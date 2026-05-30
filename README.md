@@ -1,7 +1,7 @@
 # NEX — Legal Documents
 
 Public-facing privacy policy and terms of service for the **NEX** mobile app,
-operated by Catini Martial Arts Academy.
+operated by Nex Academy LLC.
 
 🌐 **Privacy Policy:** https://kevembusiness-pixel.github.io/nex-legal/
 🌐 **Terms of Service:** https://kevembusiness-pixel.github.io/nex-legal/terms.html

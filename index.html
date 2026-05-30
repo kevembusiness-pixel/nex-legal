@@ -91,11 +91,11 @@
     </div>
 
     <h1>Privacy Policy</h1>
-    <p class="meta">Last updated: May 22, 2026</p>
+    <p class="meta">Last updated: May 30, 2026</p>
 
     <p>
       This Privacy Policy describes how <strong>NEX</strong> ("we", "our", or "the App"),
-      operated by Catini Martial Arts Academy, collects, uses, and shares information when you
+      operated by Nex Academy LLC, collects, uses, and shares information when you
       use our mobile application.
     </p>
     <p>
@@ -128,22 +128,55 @@
 
     <h3>1.3 Health and fitness data (optional)</h3>
     <p>
-      If you choose to connect a wearable device (such as Apple Watch or a Polar heart-rate
-      monitor), NEX may read the following data from <strong>Apple HealthKit</strong> (iOS) or
-      <strong>Google Health Connect</strong> (Android):
+      If you choose to connect a fitness service, NEX may read the following data:
     </p>
     <ul>
-      <li>Workout sessions (type, start time, duration)</li>
-      <li>Active calories burned</li>
-      <li>Heart-rate samples (average and maximum)</li>
+      <li><strong>Apple HealthKit (iOS)</strong> — workout sessions (type, start, duration),
+        active calories burned, and heart-rate samples (average and maximum).</li>
+      <li><strong>Polar Flow (any device)</strong> — when you authorize Polar via OAuth, NEX
+        reads through the Polar AccessLink API: workouts (sport, duration, distance, calories,
+        heart rate, training load, running index, heart-rate zones, fuel split), sleep
+        (duration, score, stages, breathing rate), nightly recharge / HRV, and daily activity
+        (steps, calories, active time).</li>
     </ul>
     <p>
       <strong>We only read this data; we never write to your health record.</strong> Data is
-      sent securely to our backend to display your training history inside the App. You can
-      revoke this access at any time from your phone's Settings.
+      stored securely in your account so that you (and your coach, when applicable) can review
+      your training history and so the App can personalize nutrition plans. You can revoke
+      Apple HealthKit access at any time in your phone's Settings, and revoke Polar Flow access
+      from your Polar account or by signing out of the integration in the App.
     </p>
 
-    <h3>1.4 Camera and Photos</h3>
+    <h3>1.4 AI-generated content</h3>
+    <p>
+      When you generate a personalized nutrition plan, NEX sends a summary of your profile
+      (weight, height, age, sex, training frequency, goal, recent recovery and training data)
+      to <strong>Anthropic Claude</strong> to produce the plan. We do <strong>not</strong>
+      send your name, email, photos, contact information, or any directly identifying data to
+      the AI provider. The generated plan is then stored in your account.
+    </p>
+
+    <h3>1.5 Chat &amp; user-generated content</h3>
+    <p>
+      NEX includes group channels and private messaging between members and coaches.
+      Messages, reactions, and reply quotes you send are stored in our database so other
+      participants can read them. By using these features you agree to our
+      <a href="./terms.html">Terms of Service</a>, which prohibits offensive or harmful content.
+      You can <strong>block</strong> another user by reporting them to a coach/admin via email
+      (<a href="mailto:kevembusiness@gmail.com">kevembusiness@gmail.com</a>), and the academy
+      moderates flagged content within 24 hours.
+    </p>
+
+    <h3>1.6 Waiver acceptance record</h3>
+    <p>
+      When you accept the academy's liability waiver, NEX generates a PDF containing your name,
+      email, the date and time of acceptance, your IP address at that moment, the document
+      version, and the exact text you agreed to. This PDF is stored in a private bucket in
+      our Supabase storage, accessible only to you and authorized administrators of the
+      academy.
+    </p>
+
+    <h3>1.7 Camera and Photos</h3>
     <ul>
       <li>The camera is used <strong>only</strong> to scan the academy's QR code for check-in.</li>
       <li>You may grant access to your photo library when uploading a profile picture.</li>
@@ -173,9 +206,15 @@
         (<a href="https://stripe.com/privacy" target="_blank" rel="noopener">privacy policy</a>)</li>
       <li><strong>Render</strong> — backend server hosting.
         (<a href="https://render.com/privacy" target="_blank" rel="noopener">privacy policy</a>)</li>
-      <li><strong>Apple HealthKit / Google Health Connect</strong> — local-only health-data
-        bridges; we read data on-device, the OS frameworks do not transmit anything to Apple
-        or Google's servers on our behalf.</li>
+      <li><strong>Apple HealthKit</strong> — local-only health-data bridge on iOS; we read
+        data on-device, the OS framework does not transmit anything to Apple's servers on our
+        behalf.</li>
+      <li><strong>Polar AccessLink</strong> — when you connect Polar Flow, we receive your
+        workout, sleep, recovery and activity data through their official API.
+        (<a href="https://www.polar.com/en/legal/privacy-notice" target="_blank" rel="noopener">privacy policy</a>)</li>
+      <li><strong>Anthropic</strong> — used only for AI nutrition plan generation. Receives a
+        de-identified summary of your training profile (no name, email or photos).
+        (<a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">privacy policy</a>)</li>
       <li><strong>Expo / EAS</strong> — push notifications and over-the-air updates.
         (<a href="https://expo.dev/privacy" target="_blank" rel="noopener">privacy policy</a>)</li>
     </ul>
@@ -226,12 +265,12 @@
       If you have any questions about this Privacy Policy, please contact:
     </p>
     <ul>
-      <li><strong>Catini Martial Arts Academy</strong></li>
+      <li><strong>Nex Academy LLC</strong></li>
       <li>Email: <a href="mailto:kevembusiness@gmail.com">kevembusiness@gmail.com</a></li>
     </ul>
 
     <footer>
-      &copy; 2026 Catini Martial Arts Academy. All rights reserved.
+      &copy; 2026 Nex Academy LLC. All rights reserved.
     </footer>
 
   </div>
