@@ -91,7 +91,7 @@
     </div>
 
     <h1>Privacy Policy</h1>
-    <p class="meta">Last updated: May 30, 2026</p>
+    <p class="meta">Last updated: August 4, 2026</p>
 
     <p>
       This Privacy Policy describes how <strong>NEX</strong> ("we", "our", or "the App"),
@@ -128,11 +128,42 @@
 
     <h3>1.3 Health and fitness data (optional)</h3>
     <p>
-      If you choose to connect a fitness service, NEX may read the following data:
+      Connecting a fitness service is optional and nothing below is read until you tap
+      <strong>Connect</strong> on the App's Fitness screen and grant permission on the screen
+      your phone shows you. If you never connect one, NEX reads none of it. When you do
+      connect, NEX may read the following data:
     </p>
     <ul>
-      <li><strong>Apple HealthKit (iOS)</strong> — workout sessions (type, start, duration),
-        active calories burned, and heart-rate samples (average and maximum).</li>
+      <li><strong>Apple HealthKit (iOS)</strong> — with your permission NEX requests read
+        access to workout sessions (type, start, duration), active energy burned, heart-rate
+        samples, resting heart rate, heart-rate variability, weight, body-fat percentage, lean
+        body mass, body mass index, sleep analysis, step count and exercise time. Of these,
+        only workouts (type, start, duration, calories, average and maximum heart rate) and the
+        weight and body-fat percentage you choose to import into your assessment are sent to
+        your NEX account. Sleep length reaches us only if it is the answer showing in your
+        morning check-in when you submit it. The rest are read on your device, shown to you,
+        and not stored by us.</li>
+      <li><strong>Health Connect (Android)</strong> — Health Connect is the health store built
+        into Android, where apps such as Samsung Health, Garmin Connect, Fitbit, Polar Flow,
+        Google Fit and Strava save what your devices record. With your permission NEX reads
+        ten kinds of record from it:
+        <ul>
+          <li>workout sessions — activity type, start and end time, and the name your device
+            gave the session</li>
+          <li>heart rate — the individual readings your watch or strap recorded</li>
+          <li>active calories burned</li>
+          <li>total calories burned — used only as a fallback for a workout your device
+            recorded no active calories for</li>
+          <li>steps</li>
+          <li>resting heart rate</li>
+          <li>weight</li>
+          <li>body-fat percentage</li>
+          <li>lean body mass</li>
+          <li>sleep sessions — when you fell asleep and woke up, and the sleep stages your
+            device recorded</li>
+        </ul>
+        We also read the name of the app that wrote each record (for example "Garmin Connect")
+        so the Fitness screen can show you where your data is coming from.</li>
       <li><strong>Polar Flow (any device)</strong> — when you authorize Polar via OAuth, NEX
         reads through the Polar AccessLink API: workouts (sport, duration, distance, calories,
         heart rate, training load, running index, heart-rate zones, fuel split), sleep
@@ -140,20 +171,97 @@
         (steps, calories, active time).</li>
     </ul>
     <p>
-      <strong>We only read this data; we never write to your health record.</strong> Data is
-      stored securely in your account so that you (and your coach, when applicable) can review
-      your training history and so the App can personalize nutrition plans. You can revoke
-      Apple HealthKit access at any time in your phone's Settings, and revoke Polar Flow access
-      from your Polar account or by signing out of the integration in the App.
+      <strong>We only read this data; we never write to your health record and we never change
+      or delete anything in it.</strong> On Android the App's manifest declares read
+      permissions only, so there is no write access for it to use. Health Connect lets you
+      choose each record type separately, and NEX works with whatever you allow — you can
+      share workouts and heart rate and withhold the rest.
+    </p>
+    <p>
+      <strong>What we use it for.</strong> Health data is used only to run features you can
+      see in the App:
+    </p>
+    <ul>
+      <li><strong>Fitness Tracker screen</strong> — the workouts you sync are listed there with
+        their type, duration, calories and average and maximum heart rate, along with your
+        totals for the last 7, 14 or 30 days and the names of the apps the readings came
+        from.</li>
+      <li><strong>Athlete assessment</strong> — you can import your latest weight and body-fat
+        percentage instead of typing them, and they are saved to your training record.</li>
+      <li><strong>Nutrition plans</strong> — the weight and body-fat percentage saved to your
+        assessment feed the calorie and macronutrient targets your plan is calculated from
+        (see 1.4). Your synced workouts do not: training load in the plan comes from the
+        sessions you enter yourself in the Nutrition questionnaire.</li>
+    </ul>
+    <p>
+      <strong>What leaves your phone.</strong> Two things are sent to your NEX account
+      automatically: the
+      workouts you sync (activity type, start and end time, duration, calories, average and
+      maximum heart rate, and the name of the app that recorded them), and the weight and
+      body-fat percentage you choose to import into your assessment. Where the app that
+      recorded a session gave it a name of its own, that name is what we store and show as the
+      activity type, so any title you typed in Garmin, Strava or Polar Flow travels with the
+      workout.
+    </p>
+    <p>
+      <strong>What stays on your phone.</strong> Steps, resting heart rate, exercise minutes
+      and active calories are read to fill the "Today" panel on the Fitness screen. Lean body
+      mass is shown beside the other measurements when you import them into your assessment.
+      These readings are displayed on your device and are not sent to our servers or stored by
+      us — for lean body mass there is not even a field on our side to store it in.
+    </p>
+    <p>
+      <strong>Sleep is the one exception, and only through you.</strong> Last night's sleep
+      length is read so the morning check-in can offer it as your answer to "hours slept",
+      instead of asking you to type what your watch already measured. It is only a suggestion:
+      it never replaces an answer you have already given, and you can tap a different number.
+      If you then submit the check-in, the number showing in that field — whether it came from
+      your watch or from you — is saved with your check-in, because it is part of the answer
+      you gave. Nothing is sent while you are still filling the form, and if you never submit,
+      nothing is stored. How well you slept is always your own answer; we never take a sleep
+      quality score from a device.
+    </p>
+    <p>
+      We do not use health or fitness data for advertising, we do not build advertising or
+      marketing profiles from it, and we never sell it or pass it to advertising platforms,
+      data brokers, information resellers, or anyone making credit or lending decisions. NEX
+      is not a medical device and nothing it shows you is a diagnosis or medical advice.
+    </p>
+    <p>
+      <strong>Turning it off.</strong> On Android, open the <strong>Health Connect</strong> app
+      on your phone (on some devices: Settings → Security &amp; privacy → More privacy settings
+      → Health Connect), choose <strong>App permissions → NEX</strong> and remove any or all
+      of them; Health Connect also lets you delete the underlying records themselves. Apple
+      HealthKit access is revoked on iOS in Settings → Privacy &amp; Security → Health → NEX,
+      and Polar Flow access from your Polar account or by signing out of the integration in the
+      App. Revoking stops any further reading straight away — it does not remove data already
+      synced to your account, which section 5 explains how to delete.
     </p>
 
     <h3>1.4 AI-generated content</h3>
     <p>
-      When you generate a personalized nutrition plan, NEX sends a summary of your profile
-      (weight, height, age, sex, training frequency, goal, recent recovery and training data)
-      to <strong>Anthropic Claude</strong> to produce the plan. We do <strong>not</strong>
-      send your name, email, photos, contact information, or any directly identifying data to
-      the AI provider. The generated plan is then stored in your account.
+      When you generate a personalized nutrition plan, NEX sends a summary of your profile to
+      <strong>Anthropic Claude</strong> to produce the plan. The summary contains your weight,
+      height, age, sex, body-fat percentage, whether you are a minor, your goal, target weight
+      and weight class, your calculated calorie and macronutrient targets, your training
+      frequency and load, recent recovery and sleep figures, your food allergies (including any
+      you flagged as anaphylaxis risks), intolerances and preferences, any medical conditions,
+      digestive symptoms and medication names you entered, a short note about current pain or
+      injury if you recorded one, your eating habits — including anything you wrote in the
+      free-text "typical day" and food-log fields, up to 600 characters each — and figures
+      derived from your assessment such as waist-to-hip ratio, estimated VO2max and grip
+      asymmetry. Because weight and body-fat percentage can be the values you imported from
+      Health Connect or Apple Health, health-app data can reach Anthropic this way.
+    </p>
+    <p>
+      The request is sent from our own server function, not from your phone, and we do
+      <strong>not</strong> send your name, email, photos, phone number, account identifier or
+      any other directly identifying data with it. It is de-identified health data, not
+      anonymous data: it is detailed and sensitive even without your name attached. Anthropic
+      processes the request on our instructions to produce your plan — it is a processing
+      service, not an advertising platform, data broker or information reseller, and we do not
+      authorize it to use your data for anything else. The generated plan is then stored in
+      your account.
     </p>
 
     <h3>1.5 Chat &amp; user-generated content</h3>
@@ -187,6 +295,9 @@
     <ul>
       <li>To create and maintain your student account.</li>
       <li>To record class attendance and training progress.</li>
+      <li>To show your synced workouts, totals and training history on the Fitness screen.</li>
+      <li>To calculate your nutrition targets from your body composition and recent training,
+        and to let your coach review your assessments and progress.</li>
       <li>To process membership payments and issue invoices.</li>
       <li>To send notifications about classes, billing, and academy events.</li>
       <li>To issue digital certificates (belt promotions, seminars).</li>
@@ -196,8 +307,32 @@
 
     <h2>3. How We Share Your Information</h2>
     <p>
-      We do not sell your personal data. We share information only with the following service
-      providers, strictly to operate the App:
+      <strong>Your coach and the academy's staff.</strong> NEX is the app of a single physical
+      academy and coaching is what it is for, so any coach or administrator account at that
+      academy — not only the coach you train with — can see your athlete record: your
+      body-composition measurements — including
+      the weight and body-fat entries you import from Health Connect or Apple Health — your
+      recovery and performance logs, your goals and daily check-ins, your attendance, the
+      health profile in which you record injuries, current pain, medications and dietary
+      restrictions, and your nutrition profile with its weight and weekly check-in history. If
+      you do not want a coach to see a measurement, do not record or import it.
+    </p>
+    <p>
+      The individual workouts you sync from Health Connect or Apple Health are not shown on any
+      coach-facing screen; they appear only on your own Fitness screen.
+    </p>
+    <p>
+      <strong>Sharing a workout yourself.</strong> Every workout card on the Fitness screen has
+      a <strong>Share</strong> button. If you tap it, that single workout's summary (activity
+      type, date, duration, calories and heart rate) is sent to our server, which renders it as
+      an image and hands the image to your phone's share sheet so you can post it wherever you
+      choose. Nothing is shared until you tap Share and pick a destination yourself.
+    </p>
+    <p>
+      We do not sell your personal data, and we never share health or fitness data with
+      advertising platforms, data brokers or information resellers, or use it for personalized
+      advertising or for credit or lending decisions. We share information only with the
+      following service providers, strictly to operate the App:
     </p>
     <ul>
       <li><strong>Supabase</strong> — database and authentication.
@@ -209,11 +344,17 @@
       <li><strong>Apple HealthKit</strong> — local-only health-data bridge on iOS; we read
         data on-device, the OS framework does not transmit anything to Apple's servers on our
         behalf.</li>
+      <li><strong>Google Health Connect</strong> — the on-device health store on Android. We
+        read from it locally on your phone; reading it does not send anything to Google on our
+        behalf. What Health Connect itself holds stays under your control in the Health
+        Connect app.</li>
       <li><strong>Polar AccessLink</strong> — when you connect Polar Flow, we receive your
         workout, sleep, recovery and activity data through their official API.
         (<a href="https://www.polar.com/en/legal/privacy-notice" target="_blank" rel="noopener">privacy policy</a>)</li>
-      <li><strong>Anthropic</strong> — used only for AI nutrition plan generation. Receives a
-        de-identified summary of your training profile (no name, email or photos).
+      <li><strong>Anthropic</strong> — used only for AI nutrition plan generation, on our
+        instructions. Receives the de-identified summary described in 1.4, which can include
+        health-app values such as weight and body-fat percentage, and no name, email, photos
+        or account identifier.
         (<a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">privacy policy</a>)</li>
       <li><strong>Expo / EAS</strong> — push notifications and over-the-air updates.
         (<a href="https://expo.dev/privacy" target="_blank" rel="noopener">privacy policy</a>)</li>
@@ -225,16 +366,32 @@
       remove personal data within 30 days, except where retention is required for legal or
       accounting purposes (e.g. tax records of payments).
     </p>
+    <p>
+      Health and fitness data synced from Health Connect, Apple Health or Polar is kept in
+      your account until you or we delete it, and it is not retained for any legal or
+      accounting purpose — deleting your account removes it with the rest of your record.
+    </p>
 
     <h2>5. Your Rights</h2>
     <p>You may, at any time:</p>
     <ul>
       <li>Access the data we hold about you.</li>
       <li>Request correction of inaccurate data.</li>
-      <li>Request deletion of your account and personal data.</li>
-      <li>Withdraw consent for health-data sharing (via phone Settings).</li>
+      <li>Delete your account and personal data yourself, in the App, under
+        <strong>Profile → Delete account</strong>. This removes your account, attendance,
+        training logs, synced workouts, body composition, chat history and signed waiver.</li>
+      <li>Request deletion of individual entries — including workouts synced from Health
+        Connect or Apple Health, and imported weight or body-fat readings — by emailing us.</li>
+      <li>Withdraw health-data access at any time: on Android in the <strong>Health
+        Connect</strong> app under App permissions → NEX, on iOS in Settings → Privacy &amp;
+        Security → Health → NEX, and for Polar from your Polar account.</li>
       <li>Export your data in a portable format.</li>
     </ul>
+    <p>
+      Deleting data in the Health Connect app removes it from Health Connect; it does not
+      reach copies already synced to your NEX account, and deleting it from your NEX account
+      does not remove it from Health Connect. Use both when you want it gone from both.
+    </p>
     <p>
       To exercise these rights, contact us at
       <a href="mailto:kevembusiness@gmail.com">kevembusiness@gmail.com</a>.
@@ -242,9 +399,14 @@
 
     <h2>6. Security</h2>
     <p>
-      We use industry-standard security measures including encryption in transit (HTTPS/TLS),
-      hashed passwords, and Row-Level Security on our database. However, no method of
-      electronic transmission or storage is 100% secure.
+      Your data is protected with modern cryptography both in transit and at rest. Everything
+      the App sends to our API and our database — health and fitness data included — travels
+      over HTTPS/TLS and must carry your signed session token, and the databases and file
+      storage of our infrastructure providers (Supabase and Render) encrypt what they hold at
+      rest. Passwords are hashed and never stored in readable form, and access to your records
+      is restricted by authentication and Row-Level Security policies on our database. Health
+      and fitness data is protected the same way as everything else in your account. However,
+      no method of electronic transmission or storage is 100% secure.
     </p>
 
     <h2>7. Children's Privacy</h2>
