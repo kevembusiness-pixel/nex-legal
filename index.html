@@ -91,7 +91,7 @@
     </div>
 
     <h1>Privacy Policy</h1>
-    <p class="meta">Last updated: August 4, 2026</p>
+    <p class="meta">Last updated: August 5, 2026</p>
 
     <p>
       This Privacy Policy describes how <strong>NEX</strong> ("we", "our", or "the App"),
@@ -136,8 +136,9 @@
     <ul>
       <li><strong>Apple HealthKit (iOS)</strong> — with your permission NEX requests read
         access to workout sessions (type, start, duration), active energy burned, heart-rate
-        samples, resting heart rate, heart-rate variability, weight, body-fat percentage, lean
-        body mass, body mass index, sleep analysis, step count and exercise time. Of these,
+        samples, resting heart rate, heart-rate variability, walking, running and cycling
+        distance, weight, body-fat percentage, lean
+        body mass, sleep analysis, step count and exercise time. Of these,
         only workouts (type, start, duration, calories, average and maximum heart rate) and the
         weight and body-fat percentage you choose to import into your assessment are sent to
         your NEX account. Sleep length reaches us only if it is the answer showing in your
@@ -146,15 +147,21 @@
       <li><strong>Health Connect (Android)</strong> — Health Connect is the health store built
         into Android, where apps such as Samsung Health, Garmin Connect, Fitbit, Polar Flow,
         Google Fit and Strava save what your devices record. With your permission NEX reads
-        ten kinds of record from it:
+        twelve kinds of record from it:
         <ul>
           <li>workout sessions — activity type, start and end time, and the name your device
             gave the session</li>
           <li>heart rate — the individual readings your watch or strap recorded</li>
+          <li>heart-rate variability — the beat-to-beat variation your watch measures,
+            usually while you sleep. Android and iPhone record this using two different
+            statistics (RMSSD and SDNN), so NEX keeps them apart and never compares one
+            against the other. If you move between an iPhone and an Android phone, your
+            variability history starts fresh — the App tells you when that happens.</li>
           <li>active calories burned</li>
           <li>total calories burned — used only as a fallback for a workout your device
             recorded no active calories for</li>
           <li>steps</li>
+          <li>distance — how far you moved, over the day and during a workout</li>
           <li>resting heart rate</li>
           <li>weight</li>
           <li>body-fat percentage</li>
@@ -196,16 +203,18 @@
     <p>
       <strong>What leaves your phone.</strong> Two things are sent to your NEX account
       automatically: the
-      workouts you sync (activity type, start and end time, duration, calories, average and
-      maximum heart rate, and the name of the app that recorded them), and the weight and
-      body-fat percentage you choose to import into your assessment. Where the app that
+      workouts you sync (activity type, start and end time, duration, distance, calories,
+      average and maximum heart rate, and the name of the app that recorded them), and the
+      weight and body-fat percentage you choose to import into your assessment. Where the app that
       recorded a session gave it a name of its own, that name is what we store and show as the
       activity type, so any title you typed in Garmin, Strava or Polar Flow travels with the
       workout.
     </p>
     <p>
-      <strong>What stays on your phone.</strong> Steps, resting heart rate, exercise minutes
-      and active calories are read to fill the "Today" panel on the Fitness screen. Lean body
+      <strong>What stays on your phone.</strong> Steps, distance, resting heart rate,
+      exercise minutes, active calories, your heart rate through the day and your
+      heart-rate variability are read to fill the Fitness screen — the activity, heart,
+      sleep and recovery panels, and the weekly trends beside them. Lean body
       mass is shown beside the other measurements when you import them into your assessment.
       These readings are displayed on your device and are not sent to our servers or stored by
       us — for lean body mass there is not even a field on our side to store it in.
